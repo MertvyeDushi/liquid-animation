@@ -1,0 +1,50 @@
+
+
+.loader
+	background: $color_white
+	padding: 10rem
+	animation: rotate 20s linear infinite
+	filter: blur(1rem) contrast(15)
+
+
+.particle
+	background: $color_black
+	
+	width: 5rem
+	height: 5rem
+
+	border-radius: 50%
+
+
+	&:first-child, &:last-child
+		width: 2.5rem
+		height: 2.5rem
+
+
+	&:nth-child(odd)
+		animation: pulse 1.3s ease-in-out infinite
+
+
+	&:nth-child(3)
+		animation-delay: .25s
+
+
+	&:nth-child(5)
+		animation-delay: .75s
+
+
+	&:nth-child(7)
+		animation-delay: 1.5s
+
+
+	&:nth-child(9)
+		animation-delay: .3s
+
+
+.left-spin
+	animation: leftSpin 2.5s linear infinite
+
+
+.right-spin
+	animation: rightSpin 2s linear infinite
+
